@@ -1,0 +1,64 @@
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using LiveCharts;
+//using LiveCharts.Wpf;
+//using System.Windows.Forms.DataVisualization.Charting;
+//using System.Drawing;
+//using LiveCharts.Wpf.Charts.Base;
+
+//namespace JsonPdf6
+//{
+//    public static class PdfGenerator
+//    {
+//        public static void GeneratePdf(List<Employee> employees, string outputPath)
+//        {
+//            // קוד ה-PDF הקיים שלך
+//            // ...
+
+//            // יצירת הגרף
+//            Chart chart = new Chart();
+//            Series series = new Series("Employees");
+//            series.ChartType = SeriesChartType.Column;
+
+//            foreach (var employee in employees)
+//            {
+//                series.Points.AddXY(employee.FirstName, employee.ID);
+//            }
+
+//            chart.Series.Add(series);
+
+//            ChartForm chartForm = new ChartForm(chart);
+//            chartForm.Show();
+//        }
+
+
+//        private static void GenerateChart(List<Employee> employees)
+//        {
+//            Chart chart = new Chart();
+//            Series series = new Series("Employees");
+//            series.ChartType = SeriesChartType.Column;
+
+//            foreach (var employee in employees)
+//            {
+//                series.Points.AddXY(employee.FirstName, employee.ID);
+//            }
+
+//            chart.Series.Add(series);
+
+//            ChartForm chartForm = new ChartForm(chart);
+//            chartForm.Show();
+//        }
+//    }
+
+//    public class ChartForm : Form
+//    {
+//        public ChartForm(Chart chart)
+//        {
+//            Controls.Add(chart);
+//            AutoSize = true;
+//        }
+//    }
+//}
